@@ -1,0 +1,30 @@
+package spotimote;
+
+message ActionMsg
+{
+    enum    ActionId{
+        ActionPlayPause       = 1;
+        ActionNext                = 2;
+        ActionPrev                = 3;
+        ActionShuffle            = 4;
+        ActionRepeat            = 5;
+        ActionVolumeUp       = 6;
+        ActionVolumeDown  = 7;
+    }
+
+    required ActionId  actionId    = 1;
+}
+
+message BroadcastMsg
+{
+   required string ip      = 1;
+   required int32   port  = 2;
+}
+
+message BroadcastReply
+{
+   required string id      = 1;
+   required string   name   = 2;
+   required string ip       = 3;
+   required int32   port           = 4;
+}
