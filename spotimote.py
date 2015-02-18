@@ -120,7 +120,7 @@ class Spotimote(object):
         return self.action(spotimote_pb2.ActionMsg.ActionVolumeDown)
 
 
-if __name__ == '__main__':
+def main():
     parser = argparse.ArgumentParser(description='Control Spotimote')
     parser.add_argument('--host', help='The hostname or IP of the Spotimote '
                                        'server. If no host is given it will '
@@ -157,3 +157,8 @@ if __name__ == '__main__':
         spotimote.host = host
         spotimote.port = port
         command(spotimote)
+
+
+if __name__ == '__main__':
+    main()
+

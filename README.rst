@@ -1,4 +1,6 @@
-# spotimote
+Spotimote
+------------------------------------------------------------------------------
+
 Python Spotify remote control using the Spotimote server
 
 This library can control the Spotimote (http://www.nodria.com/) server using Python.
