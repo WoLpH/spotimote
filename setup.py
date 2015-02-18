@@ -31,7 +31,7 @@ setup(
     description=metadata.__description__,
     url=metadata.__url__,
     license='BSD',
-    packages=find_packages(),
+    packages=['.'],
     long_description=long_description,
     tests_require=['pytest'],
     cmdclass={'test': PyTest},
